@@ -46,6 +46,7 @@ public class KineticMapViewer extends JFrame implements Runnable {
 			});
 		}
 		
+		@Override
 		public void paint(Graphics g){
 			if (info==null){
 				return;
@@ -59,6 +60,7 @@ public class KineticMapViewer extends JFrame implements Runnable {
 			g.drawImage(buffer, 0, 0, null);
 		}
 		
+		@Override
 		public void repaint(){
 			paint(getGraphics());
 		}
